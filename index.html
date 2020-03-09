@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <script type="text/javascript" src=".js"></script>
+  </head>
+
+  <body>
+    <section class="grid-container">
+
+      <nav class="menu">
+        <!-- menulogo -->
+        <div>
+          <a href="#"><img src="img/menu-logo.png" alt="" id="menu-logo" /></a>
+        </div>
+        <!-- menubars -->
+        <div id="menu-bars">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </nav>
+
+      <section class="background">
+        <header>
+          <h1>Your Time is Now!</h1>
+          <h2>Op deze pagina zijn veel wereldklokken van grote plaatsen op de wereld te bekijken. De actuele tijd en weerinformatie van de door jou gekozen stukje aarde. Om van tijdzone te wisselen, gebruik de onderstaande knop.</h2>
+          <a href="#" class="btn btn-clock">Verander Tijdzone</a>
+        </header>
+        <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+      </section>
+
+      <section class="timeOfTheDay">
+        <header>
+          <h1>Time of the day</h1>
+          <h2>Het is belangrijk om in de ruimte een idee te hebben van de verschillende tijden en weersverwachting op aarde. Zo weet u wanneer u moet slapen en opstaan uit bed.</h2>
+        </header>
+        <div class="weerinformatie">
+          <div class="weatherbox">
+            <div class="btn-weather">'S ochtends</div>
+            <h3>12 ºC - bewolkt, lichte bui</h3>
+            <div class="line"></div>
+            <img src="img/weather/rain.svg" alt="">
+          </div>
+          <div class="weatherbox">
+            <div class="btn-weather">'S middags</div>
+            <h3>12 ºC - bewolkt, lichte bui</h3>
+            <div class="line"></div>
+            <img src="img/weather/cloudy-sunny.svg" alt="">
+          </div>
+          <div class="weatherbox">
+            <div href="#" class="btn-weather">'S avonds</div>
+            <h3>12 ºC - bewolkt, lichte bui</h3>
+            <div class="line"></div>
+            <img src="img/weather/cloudy-night.svg" alt="">
+          </div>
+        </div>
+      </section>
+
+    </section>
+
+    <script type="text/javascript">
+    function showTime() {
+      var date = new Date();
+      var h = date.getHours(); // 0 - 23
+      var m = date.getMinutes(); // 0 - 59
+      var s = date.getSeconds(); // 0 - 59
+      // var session = "AM";
+      // if (h == 0) {
+      //   h = 12;
+      // }
+      // if (h > 12) {
+      //   h = h - 12;
+      //   session = "PM";
+      // }
+      h = h < 10 ? "0" + h : h;
+      m = m < 10 ? "0" + m : m;
+      s = s < 10 ? "0" + s : s;
+      // var time = h + ":" + m + ":" + s + " " + session;
+      var time = h + ":" + m + ":" + s;
+      document.getElementById("MyClockDisplay").innerText = time;
+      document.getElementById("MyClockDisplay").textContent = time;
+      setTimeout(showTime, 1000);
+      }
+
+      showTime();
+    </script>
+  </body>
+</html>
