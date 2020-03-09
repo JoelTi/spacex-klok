@@ -46,25 +46,6 @@ h3 {
 }
 
 /* floating objects */
-#float1 {
-  position: relative;
-  right: -200px;
-  top: -180px;
-  width: 250px;
-  z-index: 2;
-  animation: spin 10s infinite linear;
-}
-@keyframes spin {
-  from {
-    transform: translate(0px, 0px) rotate(0deg);
-  }
-  50% {
-    transform: translate(10px, 100px) rotate(90deg);
-  }
-  to {
-    transform: translate(0px, 0px) rotate(0deg);
-  }
-}
 #float3 {
   position: absolute;
   left: -50px;
@@ -73,6 +54,7 @@ h3 {
   transform: translate(10px, 150px;);
   animation: spin 10s infinite linear;
   z-index: -10;
+  overflow: hidden;
 }
 @keyframes spin {
   from {
