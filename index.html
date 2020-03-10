@@ -32,7 +32,6 @@
           <div class="div"></div>
           <div class="div"></div>
         </button>
-
       </nav>
 
       <section class="background">
@@ -42,38 +41,48 @@
           <a href="#" class="btn btn-clock">Verander Tijdzone</a>
         </header>
         <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+
+        <img src="img/float/float7.svg" id="float1" alt="" />
+        <img src="img/float/float1.svg" id="float2" alt="" />
       </section>
 
+
+
       <section class="timeOfTheDay">
-
-        <img src="img/float/float3.svg" id="float3" alt="" />
-
         <header>
           <h1>Time of the day</h1>
           <h2>Het is belangrijk om in de ruimte een idee te hebben van de verschillende tijden en weersverwachting op aarde. Zo weet u wanneer u moet slapen en opstaan uit bed.</h2>
         </header>
-
-
-
         <div class="weerinformatie">
           <div class="weatherbox">
             <div class="btn-weather">'S ochtends</div>
             <h3>12 ºC - bewolkt, lichte bui</h3>
             <div class="line"></div>
-            <img src="img/weather/rain.svg" alt="">
+            <img src="img/weather/rain.svg" alt="" />
+            <a href="#" class="btn-weeroverzicht">Uitgebreid overzicht</a>
           </div>
           <div class="weatherbox">
             <div class="btn-weather">'S middags</div>
-            <h3>12 ºC - bewolkt, lichte bui</h3>
+            <h3>18 ºC - af en toe zon</h3>
             <div class="line"></div>
-            <img src="img/weather/cloudy-sunny.svg" alt="">
+            <img src="img/weather/sunny.svg" alt="" />
+            <a href="#" class="btn-weeroverzicht">Uitgebreid overzicht</a>
           </div>
           <div class="weatherbox">
             <div href="#" class="btn-weather">'S avonds</div>
-            <h3>12 ºC - bewolkt, lichte bui</h3>
+            <h3>8 ºC - koele avondzon</h3>
             <div class="line"></div>
-            <img src="img/weather/cloudy-night.svg" alt="">
+            <img src="img/weather/sunny-cloudy.svg" alt="" />
+            <a href="#" class="btn-weeroverzicht">Uitgebreid overzicht</a>
           </div>
+          <div class="weatherbox">
+            <div href="#" class="btn-weather">'S nachts</div>
+            <h3>5 ºC - koude heldere nacht</h3>
+            <div class="line"></div>
+            <img src="img/weather/night.svg" alt="" />
+            <a href="#" class="btn-weeroverzicht">Uitgebreid overzicht</a>
+          </div>
+          <!-- VIERDE TOEVOEGEN??????////// -->
         </div>
       </section>
 
@@ -85,32 +94,5 @@
       </footer>
 
     </section>
-
-    <script type="text/javascript">
-    function showTime() {
-      var date = new Date();
-      var h = date.getHours(); // 0 - 23
-      var m = date.getMinutes(); // 0 - 59
-      var s = date.getSeconds(); // 0 - 59
-      // var session = "AM";
-      // if (h == 0) {
-      //   h = 12;
-      // }
-      // if (h > 12) {
-      //   h = h - 12;
-      //   session = "PM";
-      // }
-      h = h < 10 ? "0" + h : h;
-      m = m < 10 ? "0" + m : m;
-      s = s < 10 ? "0" + s : s;
-      // var time = h + ":" + m + ":" + s + " " + session;
-      var time = h + ":" + m + ":" + s;
-      document.getElementById("MyClockDisplay").innerText = time;
-      document.getElementById("MyClockDisplay").textContent = time;
-      setTimeout(showTime, 1000);
-      }
-
-      showTime();
-    </script>
   </body>
 </html>

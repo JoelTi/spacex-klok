@@ -8,9 +8,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="266.102"
-   height="229"
-   viewBox="0 0 266.102 229"
+   width="300"
+   height="300"
+   viewBox="0 0 300 300"
    version="1.1"
    id="svg74"
    sodipodi:docname="rain.svg"
@@ -23,7 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -41,8 +41,8 @@
      id="namedview76"
      showgrid="false"
      inkscape:zoom="2.0611354"
-     inkscape:cx="51.213343"
-     inkscape:cy="112.32841"
+     inkscape:cx="107.493"
+     inkscape:cy="138.50342"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
@@ -56,7 +56,7 @@
        x2="30.814001"
        y2="202.244"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.0346417,0,0,1.0346417,463.22365,179.1237)">
+       gradientTransform="matrix(1.34824,0,0,1.34824,465.18224,109.13217)">
       <stop
          offset="0"
          stop-color="#7d5dff"
@@ -85,7 +85,7 @@
        id="c"
        x="52"
        y="0"
-       width="214.102"
+       width="214.10201"
        height="178"
        filterUnits="userSpaceOnUse">
       <feOffset
@@ -111,8 +111,8 @@
     </filter>
     <linearGradient
        id="f"
-       x1="52.172269"
-       x2="52.172269"
+       x1="52.172268"
+       x2="52.172268"
        y2="104.47759"
        gradientUnits="userSpaceOnUse"
        gradientTransform="scale(1.2741147,0.78485872)"
@@ -174,9 +174,9 @@
        xlink:href="#i"
        id="linearGradient849"
        gradientUnits="userSpaceOnUse"
-       x1="9.2697491"
-       x2="9.2697491"
-       y2="18.539498"
+       x1="9.2697487"
+       x2="9.2697487"
+       y2="18.539497"
        gradientTransform="scale(0.78923387,1.2670515)"
        y1="0" />
     <linearGradient
@@ -184,9 +184,9 @@
        xlink:href="#i"
        id="linearGradient851"
        gradientUnits="userSpaceOnUse"
-       x1="9.2697491"
-       x2="9.2697491"
-       y2="18.539498"
+       x1="9.2697487"
+       x2="9.2697487"
+       y2="18.539497"
        gradientTransform="scale(0.78923387,1.2670515)"
        y1="0" />
     <linearGradient
@@ -194,9 +194,9 @@
        xlink:href="#i"
        id="linearGradient853"
        gradientUnits="userSpaceOnUse"
-       x1="9.2697491"
-       x2="9.2697491"
-       y2="18.539498"
+       x1="9.2697487"
+       x2="9.2697487"
+       y2="18.539497"
        gradientTransform="scale(0.78923387,1.2670515)"
        y1="0" />
     <linearGradient
@@ -204,35 +204,35 @@
        xlink:href="#b"
        id="linearGradient855"
        gradientUnits="userSpaceOnUse"
-       x1="37.008418"
-       x2="37.008418"
+       x1="37.008419"
+       x2="37.008419"
        y2="73.830551"
        gradientTransform="scale(1.2729404,0.78558275)"
-       y1="0.00059428786" />
+       y1="0.00059428788" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#b"
        id="linearGradient857"
        gradientUnits="userSpaceOnUse"
-       x1="33.606311"
-       x2="33.606311"
-       y2="67.006711"
+       x1="33.606312"
+       x2="33.606312"
+       y2="67.006714"
        gradientTransform="scale(1.1552881,0.86558494)"
        y1="0" />
   </defs>
   <g
-     transform="translate(-462 -177)"
+     transform="translate(-462,-106)"
      id="g72">
     <rect
-       width="224.51724"
-       height="224.51724"
-       rx="20.692833"
+       width="292.56808"
+       height="292.56808"
+       rx="26.9648"
        id="rect46"
-       style="fill:url(#a);stroke-width:1.03464162"
-       x="463.22363"
-       y="179.1237" />
+       style="fill:url(#a);stroke-width:1.3482399"
+       x="465.18225"
+       y="109.13218" />
     <g
-       transform="matrix(1.0346417,0,0,1.0346417,381.48695,-41.254977)"
+       transform="matrix(1.3482401,0,0,1.3482401,358.67128,-178.04295)"
        id="g54">
       <g
          transform="translate(54,201)"
@@ -255,7 +255,7 @@
     <g
        style="filter:url(#g)"
        id="g58"
-       transform="matrix(1.0346417,0,0,1.0346417,437.3576,166.708)">
+       transform="matrix(1.3482401,0,0,1.3482401,431.47624,92.9533)">
       <path
          inkscape:connector-curvature="0"
          style="fill:url(#f)"
@@ -264,12 +264,12 @@
          d="M 53.551,82 Q 52.422,82 51.321,81.891 50.15,82 48.949,82 H 25.52 A 25.520145,25.520145 0 0 1 25.348,30.96 35.148,35.148 0 0 1 94.994,29.86 27.2,27.2 0 0 1 125.608,73.483 22.55,22.55 0 0 1 107.939,82 Z" />
     </g>
     <path
-       style="fill:#ffffff;stroke-width:1.03464162"
+       style="fill:#ffffff;stroke-width:1.3482399"
        inkscape:connector-curvature="0"
        id="path60"
-       d="m 562.32162,326.04282 h -4.3248 c 0.76977,0 1.55196,-0.0414 2.32691,-0.11278 0.65803,0.0641 1.32951,0.10347 1.99582,0.11071 z m -29.02584,0 h -7.45562 a 26.404206,26.404206 0 0 1 -0.17796,-52.80811 36.327304,36.327304 0 0 1 36.10589,-32.03251 36.927396,36.927396 0 0 1 3.89542,0.20693 36.341789,36.341789 0 0 0 -32.20943,31.82558 26.404175,26.404175 0 0 0 -0.1583,52.80811 z m 72.21799,-53.94208 v 0 c -0.10346,-0.69114 -0.22969,-1.38849 -0.37454,-2.06928 a 28.506448,28.506448 0 0 1 7.70705,0.0114 27.942568,27.942568 0 0 0 -7.33044,2.06204 z" />
+       d="m 594.31667,300.58226 h -5.63564 c 1.00308,0 2.02235,-0.0539 3.03219,-0.14696 0.85748,0.0835 1.73248,0.13483 2.60075,0.14427 z m -37.82353,0 h -9.71541 a 34.407281,34.407281 0 0 1 -0.2319,-68.81417 47.338056,47.338056 0 0 1 47.04953,-41.74151 48.120035,48.120035 0 0 1 5.07612,0.26965 47.356931,47.356931 0 0 0 -41.97206,41.47186 34.407241,34.407241 0 0 0 -0.20628,68.81417 z m 94.10715,-70.29184 v 0 c -0.13481,-0.90062 -0.2993,-1.80934 -0.48806,-2.69648 a 37.14671,37.14671 0 0 1 10.04305,0.0149 36.411919,36.411919 0 0 0 -9.55229,2.68704 z" />
     <g
-       transform="matrix(1.0346417,0,0,1.0346417,-37.542929,-10.071911)"
+       transform="matrix(1.3482401,0,0,1.3482401,-187.36593,-137.40834)"
        id="g70">
       <path
          d="m 7.314,0 c 1.143,0 1.662,0.344 2.718,2.059 2.35,3.81 4.6,11.219 4.6,14.116 A 7.316,7.316 0 0 1 0,16.174 C 0,13.44 2.063,6.682 4.371,2.449 5.347,0.654 6.009,0 7.314,0 Z"
