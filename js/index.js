@@ -21,6 +21,18 @@ function showTime() {
   setTimeout(showTime, 1000);
   }
 
+function showNav() {
+  var x = document.getElementById('menu-mobile');
+  if (x.style.display === 'none') {
+    x.style.display = 'block';
+  } else {
+    x.style.display = 'none';
+  }
+}
+
 window.onload = function() {
   showTime();
 }
+// document.getElementsByClassName('div button').onclick = function(){
+//   showNav();
+// }

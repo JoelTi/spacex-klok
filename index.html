@@ -16,10 +16,10 @@
   <body>
     <section class="grid-container">
 
-      <nav class="menu">
+      <nav class="menubar">
         <!-- menulogo -->
         <div>
-          <a href="#"><img src="img/menu-logo.png" alt="" id="menu-logo" /></a>
+          <a href="#"><img src="img/menu-logo.png" alt="" id="menu-logo" onclick="showNav()"/></a>
         </div>
         <!-- menubars -->
         <!-- <div id="menu-bars">
@@ -27,12 +27,22 @@
           <div class="bar"></div>
           <div class="bar"></div>
         </div> -->
-        <button class="button">
+        <button class="button"  onclick="showNav()">
           <div class="div"></div>
           <div class="div"></div>
           <div class="div"></div>
         </button>
       </nav>
+
+      <nav id="menu-mobile" class="menu-animatie">
+          <ul id="mobile-items">
+            <li><a href="#" onclick="showNav()">Home</a></li>
+            <li><a href="#" onclick="showNav()">Klok</a></li>
+            <li><a href="#" onclick="showNav()">Het weer</a></li>
+            <li><a href="#" onclick="showNav()">Over SpaceX</a></li>
+            <li><a href="#" onclick="showNav()">Contact</a></li>
+          </ul>
+        </nav>
 
       <section class="background">
         <header>
