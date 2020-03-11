@@ -112,6 +112,46 @@ h3 {
     transform: translate(0px, 0px) rotate(0deg);
   }
 }
+#float4 {
+  position: absolute;
+  right: 10%;
+  bottom: 70px;
+  width: 70px;
+  animation: rotate-four 20s infinite ease-out;
+  z-index: -2;
+  overflow: hidden;
+}
+@keyframes rotate-four {
+  from {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  50% {
+    transform: translate(-20%, -100px) rotate(190deg);
+  }
+  to {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+#float5 {
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
+  width: 140px;
+  animation: rotate-five 30s infinite ease-out;
+  z-index: -2;
+  overflow: hidden;
+}
+@keyframes rotate-five {
+  from {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  50% {
+    transform: translate(60%, -500px) rotate(190deg) scale(0.8);
+  }
+  to {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+}
 
 .container {
   display: grid;
@@ -432,6 +472,7 @@ button:hover .button-text {
   padding: 0px 30px 50px 30px;
   margin-bottom: 100px;
   max-width: 300px;
+  background-color: #fff;
 }
 
 .box-shadow {
