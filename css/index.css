@@ -44,26 +44,28 @@ h3 {
 .btn:hover {
   box-shadow: 0px 0px 10px 2px #b8b8b8;
   /* ANIMATIE TOEVOEGEN   */
-} */
+}
 
 
 /* floating objects */
 #float1 {
   position: absolute;
-  left: -50px;
-  top: 0px;
-  width: 170px;
-  transform: translate(10px, 150px;);
-  animation: spin 25s infinite linear;
-  z-index: 2;
+  left: -10%;
+  top: -50px;
+  width: 200px;
+  animation: rotate-two 25s infinite linear;
+  z-index: 1;
   overflow: hidden;
 }
-@keyframes spin {
+@keyframes rotate-two {
   from {
     transform: translate(0px, 0px) rotate(0deg);
   }
+  30% {
+    transform: translate(30%, 100px);
+  }
   50% {
-    transform: translate(130px, 100px) rotate(80deg);
+    transform: translate(50%, 500px) rotate(-90deg) scale(1.6);
   }
   to {
     transform: translate(0px, 0px) rotate(0deg);
@@ -75,7 +77,6 @@ h3 {
   left: 63%;
   top: 250px;
   width: 100px;
-  transform: translate(0px, 150px;);
   animation: rotate 50s infinite ease-out;
   z-index: 2;
   overflow: hidden;
@@ -86,6 +87,26 @@ h3 {
   }
   50% {
     transform: translate(-400px, 500px) rotate(-260deg) scale(2.5);
+  }
+  to {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+#float3 {
+  position: absolute;
+  right: 3%;
+  top: 70px;
+  width: 70px;
+  animation: rotate-three 15s infinite ease-out;
+  z-index: 2;
+  overflow: hidden;
+}
+@keyframes rotate-three {
+  from {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  50% {
+    transform: translate(-40%, -70%) rotate(30deg) scale(1.8);
   }
   to {
     transform: translate(0px, 0px) rotate(0deg);
