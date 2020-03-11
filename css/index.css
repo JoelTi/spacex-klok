@@ -20,6 +20,7 @@ h2 {
   color: #D0E0FC;
   font-size: 0.8rem;
   font-weight: 300;
+  z-index: 3;
 }
 h3 {
   color: #000;
@@ -27,7 +28,7 @@ h3 {
   font-weight: 600;
   margin-bottom: 5px;
 }
-.btn {
+/* .btn {
   display: block;
   margin: 0 auto;
   color: black;
@@ -43,7 +44,8 @@ h3 {
 .btn:hover {
   box-shadow: 0px 0px 10px 2px #b8b8b8;
   /* ANIMATIE TOEVOEGEN   */
-}
+} */
+
 
 /* floating objects */
 #float1 {
@@ -67,7 +69,7 @@ h3 {
     transform: translate(0px, 0px) rotate(0deg);
   }
 }
-/* floating objects */
+
 #float2 {
   position: absolute;
   left: 63%;
@@ -83,7 +85,7 @@ h3 {
     transform: translate(0px, 0px) rotate(0deg);
   }
   50% {
-    transform: translate(-350px, 600px) rotate(-260deg) scale(2.5);
+    transform: translate(-400px, 500px) rotate(-260deg) scale(2.5);
   }
   to {
     transform: translate(0px, 0px) rotate(0deg);
@@ -102,6 +104,7 @@ h3 {
   ;
 }
 
+/*///// GRID SECTION MENU /////*/
 .menubar {
   grid-area: grid-section-menu;
   position: fixed;
@@ -121,7 +124,7 @@ h3 {
   padding: 10px;
   margin-left: 10px;
 }
-
+/* menu navigatie */
 #menu-mobile {
   position: fixed;
   top: 50px;
@@ -201,6 +204,8 @@ h3 {
   width: 28px;
 } */
 
+
+/*///// GRID SECTION BACKGROUND /////*/
 .background {
   grid-area: grid-section-background;
   background-image: url(../img/bg/bg3.svg);
@@ -219,10 +224,11 @@ h3 {
   max-width: 500px;
   margin: 0 auto;
 }
-.btn-clock {
+/* .btn-clock {
   margin-top: 30px;
   width: 120px;
-}
+} */
+/* klok */
 .clock {
   position: absolute;
   top: 17vh;
@@ -243,6 +249,94 @@ h3 {
 }
 
 
+/* button tijdzone */
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+button.learn-more {
+  width: 16rem;
+  height: auto;
+}
+button.learn-more .circle {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+button.learn-more .circle .icon {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+button.learn-more .circle .icon.arrow {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.15rem;
+  background: none;
+}
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: '';
+  top: -0.3rem;
+  right: 0rem;
+  width: 0.725rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+button.learn-more .button-text {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.8rem 0rem 0.8rem 1.5rem;
+  margin: 0 1.5rem 0 1.85rem;
+  color: #fff;
+  font-size: 0.9em;
+  font-weight: 600;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+button:hover .circle {
+  width: 100%;
+}
+button:hover .circle .icon.arrow {
+  background: #fff;
+  -webkit-transform: translate(1rem, 0);
+          transform: translate(1rem, 0);
+}
+button:hover .button-text {
+  color: #fff;
+}
+
+
+/*///// GRID SECTION DAGINFO /////*/
 .timeOfTheDay {
   grid-area: grid-section-daginfo;
   text-align: center;
@@ -263,6 +357,7 @@ h3 {
   margin-bottom: 60px;
 }
 
+/* weerinformatie */
 .weerinformatie {
   display: flex;
   flex-direction: column;
@@ -324,7 +419,7 @@ h3 {
   width: 80%;
 }
 
-/*///// SECTION-FOOTER /////*/
+/*///// GRID SECTION FOOTER /////*/
 .footer {
   grid-area: grid-section-footer;
   background-color: #0E77FF;

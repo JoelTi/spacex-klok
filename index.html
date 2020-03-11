@@ -15,10 +15,10 @@
 
   <body>
     <section class="grid-container">
-
+      <!-- GRID SECTION MENU -->
       <nav class="menubar">
-        <!-- menulogo -->
         <div>
+          <!-- menulogo -->
           <a href="#"><img src="img/menu-logo.png" alt="" id="menu-logo" onclick="showNav()"/></a>
         </div>
         <!-- menubars -->
@@ -27,6 +27,7 @@
           <div class="bar"></div>
           <div class="bar"></div>
         </div> -->
+        <!-- hamburgermenu -->
         <button class="button"  onclick="showNav()">
           <div class="div"></div>
           <div class="div"></div>
@@ -34,35 +35,47 @@
         </button>
       </nav>
 
+      <!-- menu navigatie -->
       <nav id="menu-mobile" class="menu-animatie">
-          <ul id="mobile-items">
-            <li><a href="#" onclick="showNav()">Home</a></li>
-            <li><a href="#" onclick="showNav()">Klok</a></li>
-            <li><a href="#" onclick="showNav()">Het weer</a></li>
-            <li><a href="#" onclick="showNav()">Over SpaceX</a></li>
-            <li><a href="#" onclick="showNav()">Contact</a></li>
-          </ul>
-        </nav>
+        <ul id="mobile-items">
+          <li><a href="#" onclick="showNav()">Home</a></li>
+          <li><a href="#" onclick="showNav()">Klok</a></li>
+          <li><a href="#" onclick="showNav()">Het weer</a></li>
+          <li><a href="#" onclick="showNav()">Over SpaceX</a></li>
+          <li><a href="#" onclick="showNav()">Contact</a></li>
+        </ul>
+      </nav>
 
+      <!-- GRID SECTION BACKGROUND -->
       <section class="background">
         <header>
           <h1>Your Time is Now!</h1>
           <h2>Op deze pagina zijn veel wereldklokken van grote plaatsen op de wereld te bekijken. De actuele tijd en weerinformatie van de door jou gekozen stukje aarde. Om van tijdzone te wisselen, gebruik de onderstaande knop.</h2>
-          <a href="#" class="btn btn-clock">Verander Tijdzone</a>
+          <!-- <a href="#" class="btn btn-clock">Verander Tijdzone</a> -->
+          <!-- button tijdzone -->
+          <button class="learn-more">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Verander Tijdzone</span>
+          </button>
         </header>
+        <!-- klok -->
         <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
 
-        <img src="img/float/float7.svg" id="float1" alt="" />
+        <!-- floating object -->
+        <!-- <img src="img/float/float7.svg" id="float1" alt="" /> -->
         <img src="img/float/float1.svg" id="float2" alt="" />
       </section>
 
 
-
+      <!-- GRID SECTION DAGINFO -->
       <section class="timeOfTheDay">
         <header>
           <h1>Time of the day</h1>
           <h2>Het is belangrijk om in de ruimte een idee te hebben van de verschillende tijden en weersverwachting op aarde. Zo weet u wanneer u moet slapen en opstaan uit bed.</h2>
         </header>
+        <!-- weerinformatie -->
         <div class="weerinformatie">
           <div class="weatherbox">
             <div class="btn-weather">'S ochtends</div>
@@ -96,6 +109,8 @@
         </div>
       </section>
 
+
+      <!-- GRID SECTION FOOTER -->
       <footer class="footer">
         <p>
           &copy;2020 - <strong>Joël Timmers</strong><br />
