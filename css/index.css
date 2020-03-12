@@ -224,7 +224,7 @@ h3 {
   padding: 12px 20px 12px 20px;
 
 }
-#mobile-items >li > a:hover {
+#mobile-items > li > a:hover {
   /* text-decoration: underline; */
   transform: scale(1.5);
 }
