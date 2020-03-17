@@ -94,7 +94,7 @@ h3 {
 }
 #float3 {
   position: absolute;
-  right: 3%;
+  right: 5%;
   top: 70px;
   width: 70px;
   animation: rotate-three 15s infinite ease-out;
@@ -106,7 +106,7 @@ h3 {
     transform: translate(0px, 0px) rotate(0deg);
   }
   50% {
-    transform: translate(-40%, -70%) rotate(30deg) scale(1.8);
+    transform: translate(-40%, -70%) rotate(30deg) scale(1.);
   }
   to {
     transform: translate(0px, 0px) rotate(0deg);
