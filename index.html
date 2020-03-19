@@ -1,129 +1,122 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="robots" content="noindex, nofollow" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="robots" content="noindex, nofollow" />
 
-  <title>SpaceX - klok</title>
+    <title>SpaceX - klok</title>
 
-  <link rel="stylesheet" href="css/index.css" type="text/css">
-  <link rel="icon" href="img/favicon.png" type="image/x-icon" />
-  <script type="text/javascript" src="js/index.js"></script>
-</head>
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+    <script type="text/javascript" src="js/index.js"></script>
+  </head>
 
-<body>
-  <section class="grid-container">
-    <!-- GRID SECTION MENU -->
-    <nav class="menubar">
-      <div>
-        <!-- menulogo -->
-        <a href="#" onclick="showNav()"><img src="img/menu-logo.png" alt="" id="menu-logo" /></a>
-      </div>
-      <!-- menubars -->
-      <!-- <div id="menu-bars">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div> -->
-      <!-- hamburgermenu -->
-      <button class="button" onclick="showNav()">
-        <div class="div"></div>
-        <div class="div"></div>
-        <div class="div"></div>
-      </button>
-    </nav>
-
-    <!-- menu navigatie -->
-    <nav id="menu-mobile" class="menu-animatie">
-      <ul id="mobile-items">
-        <li><a href="#" onclick="showNav()">Home</a></li>
-        <li><a href="#" onclick="showNav()">Klok</a></li>
-        <li><a href="#" onclick="showNav()">Het weer</a></li>
-        <li><a href="#" onclick="showNav()">Over SpaceX</a></li>
-        <li><a href="#" onclick="showNav()">Contact</a></li>
-      </ul>
-    </nav>
-
-    <!-- GRID SECTION BACKGROUND -->
-    <section class="background">
-      <header>
-        <h1>Your Time is Now!</h1>
-        <h2>Op deze pagina zijn veel wereldklokken van grote plaatsen op de wereld te bekijken. De actuele tijd en weerinformatie van de door jou gekozen stukje aarde. Om van tijdzone te wisselen, gebruik de onderstaande knop.</h2>
-        <!-- <a href="#" class="btn btn-clock">Verander Tijdzone</a> -->
-        <!-- button tijdzone -->
-        <button class="learn-more">
-          <span class="circle" aria-hidden="true">
-            <span class="icon arrow"></span>
-          </span>
-          <span class="button-text">Verander Tijdzone</span>
+  <body>
+    <section class="grid-container">
+      <!-- GRID SECTION MENU -->
+      <nav class="menubar">
+        <div>
+          <!-- menulogo -->
+          <a href="#" onclick="showNav()"><img src="img/menu-logo.png" alt="" id="menu-logo" /></a>
+        </div>
+        <!-- hamburgermenu -->
+        <button class="button" onclick="showNav()">
+          <div class="div"></div>
+          <div class="div"></div>
+          <div class="div"></div>
         </button>
-      </header>
+      </nav>
 
-      <!-- klok -->
-      <div id="myClock" class="clock" onload="showTime()"></div>
-      <!-- <div class="timeRegion">
-          <p id="time">amsterdam<p>
-        </div> -->
-      <!-- floating object -->
-      <img src="img/float/float1.svg" id="float2" alt="" />
-      <img src="img/float/float7.svg" id="float1" alt="" />
-      <img src="img/float/float6.svg" id="float3" alt="" />
+      <!-- menu navigatie -->
+      <nav id="menu-mobile" class="menu-animatie">
+        <ul id="mobile-items">
+          <li><a href="#" onclick="showNav()">Home</a></li>
+          <li><a href="#" onclick="showNav()">Klok</a></li>
+          <li><a href="#" onclick="showNav()">Het weer</a></li>
+          <li><a href="#" onclick="showNav()">Over SpaceX</a></li>
+          <li><a href="#" onclick="showNav()">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- GRID SECTION BACKGROUND -->
+      <section class="background">
+        <header>
+          <h1>Your Time is Now!</h1>
+          <h2>Op deze pagina zijn veel wereldklokken van grote plaatsen op de wereld te bekijken. De actuele tijd en weerinformatie van de door jou gekozen stukje aarde. Om van tijdzone te wisselen, gebruik de onderstaande knop.</h2>
+          <!-- button tijdzone -->
+          <button class="learn-more">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Verander Tijdzone</span>
+          </button>
+        </header>
+
+        <!-- klok -->
+        <div id="myClock" class="clock"></div>
+
+        <!-- floating objects -->
+        <img src="img/float/float1.svg" id="float2" />
+        <img src="img/float/float7.svg" id="float1" />
+        <img src="img/float/float6.svg" id="float3" />
+      </section>
+
+
+      <!-- GRID SECTION DAGINFO -->
+      <section class="timeOfTheDay">
+        <header>
+          <h1>Time of the day</h1>
+          <h2>Het is belangrijk om in de ruimte een idee te hebben van de verschillende tijden en weersverwachting op aarde. Zo weet u wanneer u moet slapen en opstaan uit bed.</h2>
+        </header>
+        <!-- weerinformatie -->
+        <div class="weerinformatie">
+          <!-- weerbox één - s ochtends-->
+          <div class="weatherbox" id="weatherbox-one">
+            <div class="btn-weather" id="btn-weather1">'S ochtends</div>
+            <h3>12 ºC - bewolkt, lichte bui</h3>
+            <div class="line"></div>
+            <img src="img/weather/rain.svg" alt="ochtend met wolken en regen" />
+            <a href="#" class="btn-weeroverzicht">Uitgebreid weeroverzicht</a>
+          </div>
+          <!-- weerbox twee - s middags-->
+          <div class="weatherbox" id="weatherbox-two">
+            <div class="btn-weather" id="btn-weather2">'S middags</div>
+            <h3>18 ºC - af en toe zon</h3>
+            <div class="line"></div>
+            <img src="img/weather/sunny.svg" alt="dag met zon" />
+            <a href="#" class="btn-weeroverzicht">Uitgebreid weeroverzicht</a>
+          </div>
+          <!-- weerbox drie - s avonds-->
+          <div class="weatherbox" id="weatherbox-three">
+            <div class="btn-weather" id="btn-weather3">'S avonds</div>
+            <h3>8 ºC - koele avondzon</h3>
+            <div class="line"></div>
+            <img src="img/weather/sunny-cloudy.svg" alt="avond met zon en wolken" />
+            <a href="#" class="btn-weeroverzicht">Uitgebreid weeroverzicht</a>
+          </div>
+          <!-- weerbox vier - s nachts-->
+          <div class="weatherbox" id="weatherbox-four">
+            <div class="btn-weather" id="btn-weather4">'S nachts</div>
+            <h3>5 ºC - koude heldere nacht</h3>
+            <div class="line"></div>
+            <img src="img/weather/night.svg" alt="nacht met maan" />
+            <a href="#" class="btn-weeroverzicht">Uitgebreid weeroverzicht</a>
+          </div>
+        </div>
+        <!-- floating objects -->
+        <img src="img/float/float1.svg" id="float5" />
+        <img src="img/float/float7.svg" id="float4" />
+      </section>
+
+      <!-- GRID SECTION FOOTER -->
+      <footer class="footer">
+        <p>
+          &copy;2020 - <strong>Joël Timmers</strong><br />
+          <small>In opdracht van de HHS - SpaceX - Challenge 2</small>
+        </p>
+      </footer>
     </section>
-
-
-    <!-- GRID SECTION DAGINFO -->
-    <section class="timeOfTheDay">
-      <header>
-        <h1>Time of the day</h1>
-        <h2>Het is belangrijk om in de ruimte een idee te hebben van de verschillende tijden en weersverwachting op aarde. Zo weet u wanneer u moet slapen en opstaan uit bed.</h2>
-      </header>
-      <!-- weerinformatie -->
-      <div class="weerinformatie">
-        <div class="weatherbox" id="weatherbox-one">
-          <div class="btn-weather" id="btn-weather1">'S ochtends</div>
-          <h3>12 ºC - bewolkt, lichte bui</h3>
-          <div class="line"></div>
-          <img src="img/weather/rain.svg" alt="" />
-          <a href="#" class="btn-weeroverzicht">Uitgebreid weeroverzicht</a>
-        </div>
-        <div class="weatherbox" id="weatherbox-two">
-          <div class="btn-weather" id="btn-weather2">'S middags</div>
-          <h3>18 ºC - af en toe zon</h3>
-          <div class="line"></div>
-          <img src="img/weather/sunny.svg" alt="" />
-          <a href="#" class="btn-weeroverzicht">Uitgebreid weeroverzicht</a>
-        </div>
-        <div class="weatherbox" id="weatherbox-three">
-          <div class="btn-weather" id="btn-weather3">'S avonds</div>
-          <h3>8 ºC - koele avondzon</h3>
-          <div class="line"></div>
-          <img src="img/weather/sunny-cloudy.svg" alt="" />
-          <a href="#" class="btn-weeroverzicht">Uitgebreid weeroverzicht</a>
-        </div>
-        <div class="weatherbox" id="weatherbox-four">
-          <div class="btn-weather" id="btn-weather4">'S nachts</div>
-          <h3>5 ºC - koude heldere nacht</h3>
-          <div class="line"></div>
-          <img src="img/weather/night.svg" alt="" />
-          <a href="#" class="btn-weeroverzicht">Uitgebreid weeroverzicht</a>
-        </div>
-      </div>
-      <!-- floating object -->
-      <img src="img/float/float1.svg" id="float5" alt="" />
-      <img src="img/float/float7.svg" id="float4" alt="" />
-    </section>
-
-    <!-- GRID SECTION FOOTER -->
-    <footer class="footer">
-      <p>
-        &copy;2020 - <strong>Joël Timmers</strong><br />
-        <small>In opdracht van de HHS - SpaceX - Challenge 2</small>
-      </p>
-    </footer>
-
-  </section>
-</body>
-
+  </body>
 </html>
