@@ -134,6 +134,7 @@ h3 {
   }
 }
 
+
 /* GRID STRUCTUUR */
 .container {
   display: grid;
@@ -146,6 +147,7 @@ h3 {
   "grid-section-footer"
   ;
 }
+
 
 /*///// GRID SECTION MENU /////*/
 .menubar {
@@ -206,7 +208,6 @@ h3 {
   padding: 12px 20px 12px 20px;
 }
 #mobile-items > li > a:hover {
-  /* text-decoration: underline; */
   transform: scale(1.5);
 }
 .menu-animatie {
@@ -375,14 +376,6 @@ button:hover .button-text {
   padding: 0px 25px;
   width: 75%;
 }
-.timeRegion {
-  position: absolute;
-  top: calc(17vh + 70px);
-  left: 0px;
-  right: 0px;
-  margin: auto;
-  text-align: center;
-}
 
 
 /*///// GRID SECTION DAGINFO /////*/
@@ -441,6 +434,11 @@ button:hover .button-text {
   text-decoration: none;
   border-radius: 100px;
 }
+/* actief dmv JS*/
+.weather-button {
+  background-color: #0E77FF;
+  color: #fff;
+}
 .btn-weeroverzicht {
   position: relative;
   top: 15px;
@@ -476,11 +474,6 @@ button:hover .button-text {
 .btn-weeroverzicht:hover:after {
   opacity: 1;
   right: 51px;
-}
-/* actief dmv JS*/
-.weather-button {
-  background-color: #0E77FF;
-  color: #fff;
 }
 .line {
   background-color: #0E77FF;
@@ -530,7 +523,6 @@ button:hover .button-text {
   .clock {
     left: 50px;
     margin: 0px;
-    /* top: 100px; */
     font-size: 10vw;
   }
   .background {
